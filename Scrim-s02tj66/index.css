@@ -264,6 +264,11 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none; 
   margin: 0; 
 }
+
+.order-message{
+    margin-right: auto;
+    margin-left: auto;
+}
 /*hidden*/
 
 .hidden {
