@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="/images/H-cutout.webp">
+            </div>
+        </header>
+        <main>
+            <h2>PRODUCTS</h2>
+            <section class="food-section" id="food-section">
+            </section>
+            <section class="invoice hidden" id="invoice">
+                <div class="invoice-data" id="invoice-data">
+                    
+                </div>
+                <div class="total-price">
+                    <p class="total-price-text">Total Price</p>
+                    <p class="invoice-food-price" id="total-price-data"></p>
+                </div>
+                <button class="invoice-submit"  
+                    data-complete="invoice-submit"
+                    >
+                    Complete order
+                </button>            
+            </section>
+            <section class="order-message hidden" id="order-message">
+            </section>
+        </main>
+	<script src="index.js" type="module"></script>
+    </body>
+    <div class="form-container hidden" id="form-container">
+        <button class="close-form-container" data-close-form="close-form-container">x</button>
+        <form id="form">            
+            <input type="text" 
+                name="name" 
+                id="name" 
+                placeholder="Enter your name" 
+                aria-label="name"
+                pattern="[a-z,A-Z]{1,100}"
+                required>
+            <input type="number" 
+                name="credit card" 
+                id="credit-card" 
+                placeholder="Enter your credit card number" 
+                aria-label="credit card"
+                pattern="[0-9]{16}"
+                required>
+            <input type="number" 
+                name="CVV" 
+                id="CVV" 
+                placeholder="Enter your CVV" 
+                aria-label="CVV"
+                pattern="[0-9]{3}"
+                required>
+            <input type="submit" value="Send" id="submit-btn" data-send-form="form-submitted">
+        </form>
+    </div>
+    
+</html>
+

@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    background-color: #10002b;
+    color: #e0aaff;
+    font-family: "Nunito", sans-serif;
+} 
+
+/*header styles*/
+
+header{
+    background-image: url(/images/purple-header.png);
+    background-size: cover;
+    height: 100px;
+}
+
+img {
+    height: 80px;
+    margin-left: 10px;  
+    margin-top: 10px;
+}
+
+/*main styles*/
+
+main{
+    border-top: 5px solid #e0aaff;  
+    padding: 30px 40px;
+}
+
+h2{
+  font-weight: 700;  
+  border-bottom: 2px solid #e0aaff;
+}
+
+.food-data-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;  
+    justify-content: space-between;
+}
+
+.food-emoji-data {
+    display: flex;
+    justify-content: start;
+    border-radius: 5px 25px 5px 25px;
+    border: 2px solid #e0aaff;  
+    padding-top: 7px; 
+    padding-bottom: 7px; 
+    width: 350px;
+}
+
+.food-emoji{
+    font-size: 61px;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-left: 0;
+}
+
+.food-data {
+    width: 80%;
+    padding-right: 20px;
+    margin-left: 0;
+}
+
+
+.food-name {
+    font-weight: 600;
+    font-size: larger;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.food-ingredients {
+    font-size: smaller;
+    color: #c77dff;
+}
+
+.food-price-add {
+    display: flex;
+    align-items: center;
+}
+
+.food-price {
+    padding-right: 60px;
+    font-size: 1.5rem;
+}
+
+.add-btn {
+    background-color: #10002b;
+    border: #e0aaff 2px solid;
+    border-radius: 50px;
+    color: #9d4edd;
+    height: 40px;
+    width: 40px;
+    
+}
+
+.add-btn:hover {
+    background-color: #3c096c;   
+    color: #e0aaff;
+    height: 55px;
+    width: 55px;
+    transition: 0.1s;
+}
+
+.add-btn:focus {
+    background-color: #3c096c;   
+    color: #e0aaff; 
+    height: 55px;
+    width: 55px;
+}
+
+
+/*invoice styles*/
+
+.invoice-food {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1.5px solid #e0aaff;
+}
+
+.invoice-food-data {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.invoice-remove-btn {
+    background-color: #10002b;
+    border: 2px solid #e0aaff;
+    color: #9d4edd;
+    margin-left: 20px;
+    padding: 6px 10px;
+    border-radius: 10px;
+}
+
+.invoice-remove-btn:hover, 
+.invoice-remove-btn:focus {
+    background-color: #3c096c;   
+    color: #e0aaff;
+}
+
+.invoice-food-price {
+    padding-right: 60px;
+    font-size: 1.5rem;
+}
+
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 5px solid #e0aaff;
+    text-align: center;
+}
+
+.total-price-text {
+    font-weight: 600;
+    font-size: larger;
+
+}
+
+.invoice-submit {
+    color: #e0aaff;
+    background-color: #5a189a;
+    border: 1px solid #5a189a;
+    border-radius: 40px;
+    width: 100%;
+    height: 45px;
+    font-size: 1.5rem;
+    font-weight: 600; 
+}
+
+.invoice-submit:hover, .invoice-submit:focus {
+    background-color: #3c096c;
+    border: 2px solid #e0aaff;
+    color: #e0aaff;
+    box-shadow: 3px 0px 5px #7b2cbf;
+    height: 50px;
+    transition: 0.1s;
+      
+}
+
+/*form style*/
+
+.form-container{
+    background-color: #7b2cbf;
+    border-radius: 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 350px;
+    height: 350px;
+    border: 10px solid #5a189a;
+    box-shadow: 1px 1px 1px 3px #e0aaff;
+    text-align: center;
+}
+
+.close-form-container{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: auto;
+    border: 2px solid #c77dff;
+    color: #c77dff;
+    background-color: #7b2cbf;
+    border-radius: 50px;
+    height: 25px;
+    width: 25px;
+    justify-content: center;
+    text-align: center;
+}
+
+.close-form-container:hover, .close-form-container:focus {
+    background-color: #5a189a;
+}
+
+form {   
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    margin: 15px auto;
+    background-color: #7b2cbf;
+    border: 2px solid #c77dff;
+    color: #e0aaff;
+    padding: 6px 15px;
+    align-items: center;
+    border-radius: 20px;
+    width: 60%;
+}
+
+input::placeholder {
+    color: #e0aaff;
+    padding-left: 7px;
+    font-size: 14px;
+}
+
+#submit-btn {
+    width: 40%;
+    background-color: #240046;
+}
+
+#submit-btn:hover, #submit-btn:focus {
+    width: 50%;
+    background-color: #3c096c;
+    transition: 0.1s;
+    padding: 10px 15px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+/*hidden*/
+
+.hidden {
+    display: none;
+}
+
+
